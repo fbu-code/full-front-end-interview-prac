@@ -25,19 +25,19 @@ Please refer to [https://laravel.com/docs/9.x/installation](https://laravel.com/
 - Have ability to delete a post.
 - Have a search field that filters the post entries.
 
-*NOTE: 'published' does not hide the post in the list. It is to check how you handle booleans in VueJS 
+*NOTE: `published` does *NOT* hide the post in the list. 
 
 ## Information
 ### Posts Table fields
-- id
-- title (required string, 64 characters max)
-- body (required)
-- published (boolean - not required and defaults to false)
+- `id`
+- `title` (required string, 64 characters max)
+- `body` (required)
+- `published` (boolean - not required and defaults to false)
 
 ### API Routes
-- /posts/list *(GET - all posts)*
-- /posts/create *(POST - create new post)*
-- /posts/edit/{id} *(GET - get the post via id)*
-- /posts/update *(POST - update a post. Id is required to update correct post)*
-- /posts/search/{searchTerm} *(GET - search/filter posts)*
-- /posts/delete *(POST - id to delete post)*
+- `/posts/list` *(GET - all posts)*
+- `/posts/create` *(POST - create new post)*
+- `/posts/edit/{id}` *(GET - get the post via id)*
+- `/posts/update` *(POST - update a post. Id is required to update correct post)*
+- `/posts/search/{searchTerm}` *(GET - search/filter posts)*
+- `/posts/delete` *(POST - id to delete post)*
